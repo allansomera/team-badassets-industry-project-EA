@@ -35,6 +35,9 @@
 @include bp.large{
     .redeem-modal{
         &__content{
+            padding-left: 48px;
+            padding-right: 24px;
+            padding-top: 24px;
             display: flex;
             flex-direction: column;
             color: white;
@@ -46,10 +49,73 @@
         &__close{
             display: flex;
             justify-content: flex-end;
+            @include m.fontsize_lineh_weight(40px, 30px, 400);
         }
         &__text-header{
-            @include m.fontsize_lineh_weight(30px, 30px, 500);
+            @include m.fontsize_lineh_weight(40px, 30px, 600);
             padding-bottom: 24px;
+        }
+        &__text-subheading{
+            @include m.fontsize_lineh_weight(22px, 30px, 400);
+            padding-bottom: 48px;
+        }
+
+        &__input-con1{
+            display: flex;
+            flex-direction: column;
+            padding-right: 24px;
+            
+        }
+        &__label{
+            @include m.fontsize_lineh_weight(20px, 20px, 400);
+            margin-bottom: 8px;
+        }
+        &__input{
+            @include m.fontsize_lineh_weight(16px, 0, 400);
+            height: 48px; 
+            border-radius: 10px;
+            padding-left: 24px;
+            margin-bottom: 48px;
+            background-color: #141724;
+            border: 1px solid #8c8c8c;
+            color: white;
+            &:focus{
+                background-color: #141724;
+            }
+        }
+        &__input-con2{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 24px;
+        }
+
+        &__btn-cancel{
+            @include m.fontsize_lineh_weight(28px, 0, 400);
+            border: 1px solid #8c8c8c;
+            color: #8c8c8c;
+            background-color: #141724;
+            // padding-right: 24px;
+            height: 48px;
+            width: 125px;
+            border-radius: 8px;
+            text-align: center;
+            margin-right: 24px;
+        }
+
+        &__btn-continue{
+            @include m.fontsize_lineh_weight(28px, 0, 400);
+            border: 1px solid #276afc;
+            color: #8c8c8c;
+            background-color: #141724;
+            height: 48px;
+            width: 175px;
+            border-radius: 8px;
+            text-align: center;
+            margin-right: 24px;
+            &:hover{
+                color: white;
+                background-color: #276afc;
+            }
         }
     
     }

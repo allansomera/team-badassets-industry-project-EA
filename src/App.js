@@ -12,11 +12,16 @@ import Layout from "./components/layout/Layout";
 
 function App() {
   const [redeemModal, setredeemModal] = useState({
-    isActive: false,
+    isActive: true,
+  });
+  const [modalContent, setModalContent] = useState({
+    modal1: false,
+    modal2: true,
+    modal3: false,
   });
   return (
     <>
-      {redeemModal.isActive && <RedeemModal />}
+      {redeemModal.isActive && <RedeemModal modalContent={modalContent} />}
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/overview" element={<OverView />} />
