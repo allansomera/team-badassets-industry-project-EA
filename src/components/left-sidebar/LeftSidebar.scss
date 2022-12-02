@@ -9,11 +9,29 @@
     height: 100vh;
     color: white;
     &__sidenav{
+        height: 70%;
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     &__item{
+        padding-top: 16px;
+        display: flex;
         color: #d3d3d6;
     }
+    &__item-icon{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        background-color: grey;
+        border-radius: 50%;
+    }
+    &__text{
+        display: flex;
+        align-items: center;
+    }
+
 }
 /*  MOBILE   */
 @include breakpoint.small {

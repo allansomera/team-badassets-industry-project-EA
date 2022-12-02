@@ -3,7 +3,9 @@ import "./Main.scss";
 const Main = () => {
   return (
     <>
-      <div className="main">main</div>
+      <div className="main">
+        <div className="main__top-section"></div>
+      </div>
     </>
   );
 };

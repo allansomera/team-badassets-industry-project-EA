@@ -5,9 +5,31 @@ const LeftSidebar = () => {
     <>
       <div className="leftsidebar">
         <ul className="leftsidebar__sidenav">
-          <li className="leftsidebar__item">Home</li>
-          <li className="leftsidebar__item">Browse</li>
-          <li className="leftsidebar__item">My Collection</li>
+          <div className="leftsidebar__top">
+            <li className="leftsidebar__item">
+              <div className="leftsidebar__item-icon"></div>
+              <div className="leftsidebar__text">Home</div>
+            </li>
+            <li className="leftsidebar__item">
+              <div className="leftsidebar__item-icon"></div>
+              <div className="leftsidebar__text">Store</div>
+            </li>
+            <li className="leftsidebar__item">
+              <div className="leftsidebar__item-icon"></div>
+              <div className="leftsidebar__text">Library</div>
+            </li>
+          </div>
+          <div className="leftsidebar__bottom">
+            <li className="leftsidebar__item">
+              <div className="leftsidebar__item-icon"></div>
+              <div className="leftsidebar__text">Redeem Code</div>
+            </li>
+
+            <li className="leftsidebar__item">
+              <div className="leftsidebar__item-icon"></div>
+              <div className="leftsidebar__text">Download</div>
+            </li>
+          </div>
         </ul>
       </div>
     </>
