@@ -1,7 +1,16 @@
-@use "./styles/partials/colors" as *;
-@use "./styles/partials/breakpoints" as breakpoint;
-@use "./styles/partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as breakpoint;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
 
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+    height: 20px;
+    color: white;
+}
 /*  MOBILE   */
 @include breakpoint.small {
 }

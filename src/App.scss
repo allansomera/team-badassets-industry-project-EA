@@ -2,6 +2,9 @@
 @use "./styles/partials/breakpoints" as breakpoint;
 @use "./styles/partials/mixins" as *;
 
+.container {
+    display: flex;
+}
 /*  MOBILE   */
 @include breakpoint.small {
 }
