@@ -1,6 +1,6 @@
 import "./FriendsList.scss";
 import UserLogo from "../../assets/images/user.png";
-import AddFriend from "../../assets/images/addfriend.png"
+import AddFriend from "../../assets/images/addfriend.png";
 
 const FriendsList = () => {
   return (
