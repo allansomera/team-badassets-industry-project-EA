@@ -76,9 +76,7 @@ const RedeemModal = ({ modalContent, changeModalContent, closeHandler }) => {
                   </span>
                 </div>
                 <div className="redeem-modal__sec2">
-                  <div className="redeem-modal__text-header">
-                    Confirm Code Activation
-                  </div>
+                  <div className="redeem-modal__text-header">Game Redeemed</div>
                 </div>
                 <div className="redeem-modal__mod3-sec3">
                   <div className="redeem-modal__mod3-sec3-left">
@@ -97,7 +95,10 @@ const RedeemModal = ({ modalContent, changeModalContent, closeHandler }) => {
                       >
                         Cancel
                       </button>
-                      <button className="redeem-modal__mod3-btn-download">
+                      <button
+                        className="redeem-modal__mod3-btn-download"
+                        onClick={() => closeHandler()}
+                      >
                         Download
                       </button>
                     </div>

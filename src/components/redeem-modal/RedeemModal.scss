@@ -183,12 +183,18 @@
             border: 1px solid #276afc;
             color: #8c8c8c;
             width: 175px;
+            height: 48px;
             border-radius: 8px;
             text-align: center;
             margin-right: 24px;
-            background-color: #276afc;
+            // background-color: #276afc;
             color: white;
             cursor: pointer;
+            background-color: #141724;
+            &:hover{
+                color: white;
+                background-color: #276afc;
+            }
         }
 
         // MODAL 3
@@ -240,9 +246,13 @@
             border-radius: 8px;
             text-align: center;
             margin-right: 24px;
-            background-color: #276afc;
             color: white;
             cursor: pointer;
+            background-color: #141724;
+            &:hover{
+                color: white;
+                background-color: #276afc;
+            }
         }
     }
 }
