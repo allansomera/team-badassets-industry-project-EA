@@ -10,12 +10,12 @@ const Layout = () => {
 		<section className="layout">
 			<div className="container">
 				<Header />
-				<div className="main">
-					<div className="main__section-left">
+				<div className="layout-body">
+					<div className="layout-body__section-left">
 						<LeftSidebar />
 						<FriendsList />
 					</div>
-					<div className="main__section-right">
+					<div className="layout-body__section-right">
 						<Main />
 						{/* <Outlet /> */}
 					</div>

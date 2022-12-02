@@ -5,16 +5,15 @@
 .games__card {
 	width: 100%;
 	display: flex;
-	gap: 2%;
 }
 
 .game {
 	&__card {
-		max-width: 20.9256rem;
+		width: 30%;
+		// max-width: 20.9256rem;
 	}
 
 	&__image {
-		width: 20.9256remrem;
 		height: 9.5369rem;
 	}
 
