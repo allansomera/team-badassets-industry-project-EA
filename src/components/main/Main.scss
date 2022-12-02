@@ -5,60 +5,74 @@
 
 .main {
 	background-color: #1d2033;
-	// width: 100%;
-	height: 100%;
+	width: 66.2963rem;
+	// height: 100%;
 	color: white;
 	display: flex;
 	flex-direction: column;
 
 	&__top-section {
-		height: 60%;
+		height: 28.3794rem;
 		background: url("../../assets/images/Group\ 37343.png") center/cover;
 		padding: 1rem;
 	}
 
 	&__bottom-section {
-		height: 40%;
+		height: 14.6294rem;
+		padding: 1rem;
 	}
 }
 
 .buttons {
 	display: flex;
-	width: 30%;
 	height: 2.5rem;
-	gap: 2%;
+	width: 147px;
+	gap: 5%;
 }
 
 .btn {
 	background-color: #323445;
-	height: 2.5rem;
+	height: 2.9169rem;
 	border-radius: 0.5rem;
 	border: none;
 	color: #ffffff;
-	font-size: 1.5rem;
+	font-size: 1.1113rem;
 
 	&-icon {
-		height: 1.75rem;
-		width: 1.4375rem;
+		height: 1.2962rem;
+		width: 1.0625rem;
+	}
+
+	&-left {
+		width: 5.8794rem;
+	}
+	&-right {
+		width: 44.44px;
 	}
 
 	&-join {
-		margin-top: 10.3125rem;
+		margin-top: 7.6375rem;
 		border: 2px solid #2764ea;
-		height: 2.8125rem;
-		width: 10.9375rem;
+		height: 2.0531rem;
+		width: 8.0975rem;
 		border-radius: 0.5rem;
 		background-color: rgba(0, 0, 0, 0);
+		color: #ffffff;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
 	}
 }
 
 .searchbar {
 	position: relative;
-	height: 2.5rem;
+	height: 2.9162rem;
+	width: 16.3888rem;
 
 	&__input {
 		height: 100%;
-		width: 18rem;
+		width: 100%;
 		padding-left: 2.5rem;
 	}
 
@@ -72,8 +86,8 @@
 .navbar {
 	display: flex;
 	justify-content: flex-start;
-	gap: 4%;
-	width: 50%;
+	gap: 2%;
+	width: 419px;
 }
 
 .hero {

@@ -3,18 +3,21 @@
 @use "../../styles/partials/mixins" as *;
 
 .games__card {
-	width: 100%;
+	width: 66.2963rem;
+	height: 100%;
 	display: flex;
+	gap: 2%;
 }
 
 .game {
 	&__card {
-		width: 30%;
-		// max-width: 20.9256rem;
+		width: 20.9256rem;
+		height: 14.3331rem;
 	}
 
 	&__image {
 		height: 9.5369rem;
+		width: 100%;
 	}
 
 	&__title {
@@ -24,6 +27,7 @@
 
 	&__desc {
 		@include desktopBodyLarge;
+		font-size: 0.7406rem;
 	}
 }
 
