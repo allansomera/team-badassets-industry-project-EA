@@ -24,7 +24,6 @@ const LeftSidebar = () => {
               <div className="leftsidebar__item-icon"></div>
               <div className="leftsidebar__text">Redeem Code</div>
             </li>
-
             <li className="leftsidebar__item">
               <div className="leftsidebar__item-icon"></div>
               <div className="leftsidebar__text">Download</div>

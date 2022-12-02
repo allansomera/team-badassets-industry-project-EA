@@ -1,9 +1,14 @@
 import "./App.scss";
-import { Routes, Route } from "react-router-dom";
+import Header from "./components/header/Header";
+import LeftSidebar from "./components/left-sidebar/LeftSidebar";
+import Main from "./components/main/Main";
+import CollapsibleBar from "./components/collapsible-bar/CollapsibleBar";
+import { Routes, Route, Outlet } from "react-router-dom";
 import OverView from "./components/overview/OverView";
+import FriendsList from "./components/friends-list/FriendsList";
+import RedeemModal from "./components/redeem-modal/RedeemModal";
 import { useState } from "react";
 import Layout from "./components/layout/Layout";
-import RedeemModal from "./components/redeem-modal/RedeemModal";
 
 function App() {
   const [redeemModal, setredeemModal] = useState({
