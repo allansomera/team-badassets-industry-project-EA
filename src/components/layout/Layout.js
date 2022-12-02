@@ -7,17 +7,21 @@ import "./Layout.scss";
 
 const Layout = ({ redeemHandler }) => {
   return (
-    <>
-      <Header />
+    <section className="layout">
       <div className="container">
-        <div className="container__sidebar">
-          <LeftSidebar redeemHandler={redeemHandler} />
-          <FriendsList />
+        <Header />
+        <div className="layout-body">
+          <div className="layout-body__section-left">
+            <LeftSidebar redeemHandler={redeemHandler} />
+            <FriendsList />
+          </div>
+          <div className="layout-body__section-right">
+            <Main />
+            {/* <Outlet /> */}
+          </div>
         </div>
-        <Main />
-        <Outlet />
       </div>
-    </>
+    </section>
   );
 };
 
