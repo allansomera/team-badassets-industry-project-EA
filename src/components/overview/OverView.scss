@@ -1,0 +1,23 @@
+.overview {
+	width: 70vw;
+	display: flex;
+	margin: 0 auto;
+	gap: 5%;
+
+	&-left {
+		width: 60%;
+	}
+	&-right {
+		width: 40%;
+	}
+
+	&__row {
+		padding: 1rem 0;
+		border-bottom: 1px solid black;
+
+		&-bottom {
+			padding: 1rem 0;
+			border: none;
+		}
+	}
+}
