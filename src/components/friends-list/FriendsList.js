@@ -1,46 +1,54 @@
 import "./FriendsList.scss";
-import UserLogo from "../../assets/images/user.png";
-import AddFriend from "../../assets/images/addfriend.png";
+import Hamburger from "../../assets/icons/hamburger-menu.png";
+import UserOne from "../../assets/images/user-1.png";
+import UserTwo from "../../assets/images/user-2.png";
+import UserThree from "../../assets/images/user-3.png";
+import SeeAllArrow from "../../assets/images/see-all.png";
 
 const FriendsList = () => {
   return (
     <>
       <div className="sidebar">
-        <div className="sidebar__header">
-          <p>Friends</p>
-          <img className="sidebar__img" src={AddFriend}></img>
-        </div>
-        <div className="sidebar__user">
-          <div className="sidebar__user-img">
-            <img className="sidebar__img" src={UserLogo}></img>
+        <div className="sidebar__title-wrapper">
+          <div className="sidebar__item">
+            <p className="sidebar__title">Friends</p>
+            <p className="sidebar__text">(2/29 online)</p>
           </div>
-          <div className="sidebar__user-info">
-            <p className="sidebar__username">Sam</p>
-          </div>
-        </div>
-        <div className="sidebar__user">
-          <div className="sidebar__user-img">
-            <img className="sidebar__img" src={UserLogo}></img>
-          </div>
-          <div className="sidebar__user-info">
-            <p className="sidebar__username">Carlos</p>
+          <div className="sidebar__item">
+            <img
+              className="sidebar__title-menu"
+              src={Hamburger}
+              alt="Hamburger menu"
+            ></img>
           </div>
         </div>
-        <div className="sidebar__user">
-          <div className="sidebar__user-img">
-            <img className="sidebar__img" src={UserLogo}></img>
-          </div>
-          <div className="sidebar__user-info">
-            <p className="sidebar__username">Shirley</p>
-          </div>
+        <div>
+          <img
+            className="sidebar__user"
+            src={UserOne}
+            alt="Active chat user"
+          ></img>
         </div>
-        <div className="sidebar__user">
-          <div className="sidebar__user-img">
-            <img className="sidebar__img" src={UserLogo}></img>
-          </div>
-          <div className="sidebar__user-info">
-            <p className="sidebar__username">Fran</p>
-          </div>
+        <div>
+          <img
+            className="sidebar__user"
+            src={UserTwo}
+            alt="Active chat user"
+          ></img>
+        </div>
+        <div>
+          <img
+            className="sidebar__user"
+            src={UserThree}
+            alt="Inactive chat user"
+          ></img>
+        </div>
+        <div className="sidebar__arrow-wrapper">
+          <img
+            className="sidebar__arrow"
+            src={SeeAllArrow}
+            alt="See all arrow"
+          ></img>
         </div>
       </div>
     </>
