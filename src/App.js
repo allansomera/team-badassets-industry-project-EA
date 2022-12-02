@@ -4,6 +4,7 @@ import LeftSidebar from "./components/left-sidebar/LeftSidebar";
 import Main from "./components/main/Main";
 import { Routes, Route, Outlet } from "react-router-dom";
 import OverView from "./components/overview/OverView";
+import FriendsList from "./components/friends-list/FriendsList";
 
 const Layout = () => {
 	return (
@@ -12,6 +13,7 @@ const Layout = () => {
 			<div className="container">
 				<LeftSidebar />
 				<Main />
+				<FriendsList />
 				<Outlet />
 			</div>
 		</>

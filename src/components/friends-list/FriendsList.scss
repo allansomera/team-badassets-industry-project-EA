@@ -1,0 +1,42 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as breakpoint;
+@use "../../styles/partials/mixins" as *;
+
+.sidebar {
+  background-color: #171b2a;
+  width: 300px;
+  height: 100vh;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  &__user {
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+  &__title {
+    display: flex;
+    color: white;
+    padding: 0 1rem;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
