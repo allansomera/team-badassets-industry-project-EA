@@ -6,19 +6,23 @@ import FriendsList from "../friends-list/FriendsList";
 import "./Layout.scss";
 
 const Layout = () => {
-  return (
-    <>
-      <Header />
-      <div className="container">
-        <div className="container__sidebar">
-          <LeftSidebar />
-          <FriendsList />
-        </div>
-        <Main />
-        <Outlet />
-      </div>
-    </>
-  );
+	return (
+		<section className="layout">
+			<div className="container">
+				<Header />
+				<div className="layout-body">
+					<div className="layout-body__section-left">
+						<LeftSidebar />
+						<FriendsList />
+					</div>
+					<div className="layout-body__section-right">
+						<Main />
+						{/* <Outlet /> */}
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default Layout;
