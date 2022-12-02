@@ -15,13 +15,55 @@ function App() {
     isActive: true,
   });
   const [modalContent, setModalContent] = useState({
-    modal1: false,
-    modal2: true,
+    modal1: true,
+    modal2: false,
     modal3: false,
   });
+
+  const changeModalContent = (num) => {
+    switch (num) {
+      case 2:
+        console.log("do i get here");
+        setModalContent((modal) => ({
+          modal1: false,
+          modal2: true,
+          modal3: false,
+        }));
+        break;
+      case 3:
+        console.log("do i get here");
+        setModalContent((modal) => ({
+          modal1: false,
+          modal2: false,
+          modal3: true,
+        }));
+        break;
+      default:
+        setModalContent((modal) => ({
+          modal1: true,
+          modal2: false,
+          modal3: false,
+        }));
+    }
+  };
+  const closeHandler = () => {
+    setModalContent((modal) => ({
+      modal1: true,
+      modal2: false,
+      modal3: false,
+    }));
+    setredeemModal((modal) => ({ ...modal.isActive, isActive: false }));
+  };
+
   return (
     <>
-      {redeemModal.isActive && <RedeemModal modalContent={modalContent} />}
+      {redeemModal.isActive && (
+        <RedeemModal
+          modalContent={modalContent}
+          changeModalContent={changeModalContent}
+          closeHandler={closeHandler}
+        />
+      )}
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/overview" element={<OverView />} />

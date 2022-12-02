@@ -50,6 +50,7 @@
             display: flex;
             justify-content: flex-end;
             @include m.fontsize_lineh_weight(40px, 30px, 400);
+            cursor: pointer;
         }
         &__text-header{
             @include m.fontsize_lineh_weight(40px, 30px, 600);
@@ -117,6 +118,22 @@
                 background-color: #276afc;
             }
         }
-    
+        &__mod2-sec3{
+            display: flex;
+        }
+        &__mod3-sec3{
+            display: flex;
+        }
+        &__mod2-sec3-left-imgcon{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+        }
+
+        &__mod3-sec3-left-imgcon{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+        }
     }
 }
