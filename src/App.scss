@@ -4,7 +4,11 @@
 @use "./styles/partials/resets" as *;
 
 .container {
-    display: flex;
+	display: flex;
+}
+.left-side {
+	display: flex;
+	flex-direction: column;
 }
 /*  MOBILE   */
 @include breakpoint.small {
