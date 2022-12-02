@@ -1,7 +1,31 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as breakpoint;
+@use "../../styles/partials/mixins" as *;
+
+.layout {
+	width: 100vw;
+	height: 100vh;
+	background-color: #1d2033;
+}
+
 .container {
-    &__sidebar{
-        display: flex;
-        flex-direction: column;
-        
-    }
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	display: flex;
+	width: 100%;
+
+	&__section-left {
+		width: 30%;
+		height: 100%;
+	}
+
+	&__section-right {
+		width: 70%;
+		height: 100%;
+	}
 }

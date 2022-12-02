@@ -11,18 +11,17 @@ import { useState } from "react";
 import Layout from "./components/layout/Layout";
 
 function App() {
-  const [redeemModal, setredeemModal] = useState({
-    isActive: false,
-  });
-  return (
-    <>
-      {redeemModal.isActive && <RedeemModal />}
-      <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route path="/overview" element={<OverView />} />
-      </Routes>
-    </>
-  );
+	const [redeemModal, setredeemModal] = useState({
+		isActive: false
+	});
+	return (
+		<>
+			{redeemModal.isActive && <RedeemModal />}
+			<Routes>
+				<Route path="/" element={<Layout />} />
+			</Routes>
+		</>
+	);
 }
 
 export default App;
