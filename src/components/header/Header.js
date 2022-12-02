@@ -12,19 +12,19 @@ const Header = () => {
   return (
     <>
       <div className="header__bar">
-        <img className="header__bar-icons" src={DesktopIcons}></img>
+        <img className="header__bar-icons" src={DesktopIcons} alt="desktop icons"></img>
       </div>
       <header className="header">
         <div>
-          <img className="header__logo-ea" src={Logo}></img>
+          <img className="header__logo-ea" src={Logo} alt="EA logo"></img>
         </div>
         <div className="header__logo-container">
-        <img className="header__logo" src={Cart}></img>
-        <img className="header__logo" src={Bell}></img>
-        <img className="header__logo" src={Setting}></img>
-        <img className="header__logo" src={Account}></img>
-        <img className="header__logo-online" src={Online}></img>
-      </div>
+          <img className="header__logo" src={Cart} alt="shopping cart icon"></img>
+          <img className="header__logo" src={Bell} alt="bell icon"></img>
+          <img className="header__logo" src={Setting} alt="setting icon"></img>
+          <img className="header__logo" src={Account} alt="account icon"></img>
+          <img className="header__logo-online" src={Online} alt="online icon"></img>
+        </div>
       </header>
     </>
   );
