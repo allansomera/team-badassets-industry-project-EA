@@ -31,19 +31,22 @@ const RedeemModal = ({ modalContent, changeModalContent, closeHandler }) => {
                         Product
                       </div>
                       <div className="redeem-modal__mod2-sec3-right-con1-prodtitle">
-                        Sims3
+                        The Sims 3
                       </div>
                     </div>
                     <div className="redeem-modal__mod2-sec3-right-con2">
-                      <div className="redeem-modal__mod2-sec3-right-con1-accountheader">
+                      <div className="redeem-modal__mod2-sec3-right-con2-accountheader">
                         AccountID
                       </div>
-                      <div className="redeem-modal__mod2-sec3-right-con1-accountname">
+                      <div className="redeem-modal__mod2-sec3-right-con2-accountname">
                         amywalker123
                       </div>
                     </div>
                     <div className="redeem-modal__mod2-sec3-right-con3">
-                      <button className="redeem-modal__mod2-btn-cancel">
+                      <button
+                        className="redeem-modal__mod2-btn-cancel"
+                        onClick={() => closeHandler()}
+                      >
                         Cancel
                       </button>
                       <button
@@ -88,7 +91,10 @@ const RedeemModal = ({ modalContent, changeModalContent, closeHandler }) => {
                       library.
                     </div>
                     <div className="redeem-modal__mod3-sec3-right-con2">
-                      <button className="redeem-modal__mod3-btn-cancel">
+                      <button
+                        className="redeem-modal__mod3-btn-cancel"
+                        onClick={() => closeHandler()}
+                      >
                         Cancel
                       </button>
                       <button className="redeem-modal__mod3-btn-download">
@@ -134,7 +140,12 @@ const RedeemModal = ({ modalContent, changeModalContent, closeHandler }) => {
                   </div>
                 </div>
                 <div className="redeem-modal__input-con2">
-                  <button className="redeem-modal__btn-cancel">Cancel</button>
+                  <button
+                    className="redeem-modal__btn-cancel"
+                    onClick={() => closeHandler()}
+                  >
+                    Cancel
+                  </button>
                   <button
                     className="redeem-modal__btn-continue"
                     onClick={() => changeModalContent(2)}

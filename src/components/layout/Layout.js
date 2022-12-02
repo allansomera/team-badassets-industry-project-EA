@@ -5,13 +5,13 @@ import { Outlet } from "react-router-dom";
 import FriendsList from "../friends-list/FriendsList";
 import "./Layout.scss";
 
-const Layout = () => {
+const Layout = ({ redeemHandler }) => {
   return (
     <>
       <Header />
       <div className="container">
         <div className="container__sidebar">
-          <LeftSidebar />
+          <LeftSidebar redeemHandler={redeemHandler} />
           <FriendsList />
         </div>
         <Main />

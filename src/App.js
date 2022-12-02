@@ -23,7 +23,6 @@ function App() {
   const changeModalContent = (num) => {
     switch (num) {
       case 2:
-        console.log("do i get here");
         setModalContent((modal) => ({
           modal1: false,
           modal2: true,
@@ -31,7 +30,6 @@ function App() {
         }));
         break;
       case 3:
-        console.log("do i get here");
         setModalContent((modal) => ({
           modal1: false,
           modal2: false,
@@ -54,6 +52,9 @@ function App() {
     }));
     setredeemModal((modal) => ({ ...modal.isActive, isActive: false }));
   };
+  const redeemHandler = () => {
+    setredeemModal((modal) => ({ ...modal.isActive, isActive: true }));
+  };
 
   return (
     <>
@@ -65,7 +66,7 @@ function App() {
         />
       )}
       <Routes>
-        <Route path="/" element={<Layout />} />
+        <Route path="/" element={<Layout redeemHandler={redeemHandler} />} />
         <Route path="/overview" element={<OverView />} />
       </Routes>
     </>
