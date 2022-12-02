@@ -12,7 +12,7 @@ import Layout from "./components/layout/Layout";
 
 function App() {
   const [redeemModal, setredeemModal] = useState({
-    isActive: true,
+    isActive: false,
   });
   return (
     <>
