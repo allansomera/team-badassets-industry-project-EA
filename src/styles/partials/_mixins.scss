@@ -1,6 +1,16 @@
 @use "./colors" as *;
 @use "./fonts" as *;
 
+@mixin pad_sizing_lr($val) {
+  padding-left: $val;
+  padding-right: $val;
+}
+
+@mixin fontsize_lineh_weight($font_size, $line-height, $weight) {
+  font-size: $font_size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
 // Desktop and Tablet Section
 @mixin desktopPageHeader {
 	font-size: 2rem;

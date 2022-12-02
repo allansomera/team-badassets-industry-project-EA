@@ -6,33 +6,23 @@ import CollapsibleBar from "./components/collapsible-bar/CollapsibleBar";
 import { Routes, Route, Outlet } from "react-router-dom";
 import OverView from "./components/overview/OverView";
 import FriendsList from "./components/friends-list/FriendsList";
-
-const Layout = () => {
-	return (
-		<>
-			<Header />
-			<div className="container">
-				<div className="left-side">
-					<LeftSidebar />
-					<CollapsibleBar />
-				</div>
-				<Main />
-				<FriendsList />
-				<Outlet />
-			</div>
-		</>
-	);
-};
+import RedeemModal from "./components/redeem-modal/RedeemModal";
+import { useState } from "react";
+import Layout from "./components/layout/Layout";
 
 function App() {
-	return (
-		<>
-			<Routes>
-				<Route path="/" element={<Layout />} />
-				<Route path="/overview" element={<OverView />} />
-			</Routes>
-		</>
-	);
+  const [redeemModal, setredeemModal] = useState({
+    isActive: false,
+  });
+  return (
+    <>
+      {redeemModal.isActive && <RedeemModal />}
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/overview" element={<OverView />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
