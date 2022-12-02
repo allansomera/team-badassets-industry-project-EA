@@ -3,6 +3,9 @@
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/resets" as *;
 
+.container {
+    display: flex;
+}
 /*  MOBILE   */
 @include breakpoint.small {
 }
