@@ -3,17 +3,21 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/colors" as *;
 
-.leftsidebar{
-    background-color: #171b2a;
-    width: 300px;
-    height: 100vh;
-    color: white;
-    &__sidenav{
-        list-style-type: none;
-    }
-    &__item{
-        color: #d3d3d6;
-    }
+.leftsidebar {
+	background-color: #171b2a;
+	width: 300px;
+	// height: 100vh;
+
+	color: white;
+	display: flex;
+	flex-direction: column;
+
+	&__sidenav {
+		list-style-type: none;
+	}
+	&__item {
+		color: #d3d3d6;
+	}
 }
 /*  MOBILE   */
 @include breakpoint.small {

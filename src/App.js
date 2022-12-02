@@ -2,6 +2,7 @@ import "./App.scss";
 import Header from "./components/header/Header";
 import LeftSidebar from "./components/left-sidebar/LeftSidebar";
 import Main from "./components/main/Main";
+import CollapsibleBar from "./components/collapsible-bar/CollapsibleBar";
 import { Routes, Route, Outlet } from "react-router-dom";
 import OverView from "./components/overview/OverView";
 import FriendsList from "./components/friends-list/FriendsList";
@@ -11,7 +12,10 @@ const Layout = () => {
 		<>
 			<Header />
 			<div className="container">
-				<LeftSidebar />
+				<div className="left-side">
+					<LeftSidebar />
+					<CollapsibleBar />
+				</div>
 				<Main />
 				<FriendsList />
 				<Outlet />
