@@ -1,32 +1,23 @@
 import "./App.scss";
-import Header from "./components/header/Header";
-import LeftSidebar from "./components/left-sidebar/LeftSidebar";
-import Main from "./components/main/Main";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import OverView from "./components/overview/OverView";
-
-const Layout = () => {
-	return (
-		<>
-			<Header />
-			<div className="container">
-				<LeftSidebar />
-				<Main />
-				<Outlet />
-			</div>
-		</>
-	);
-};
+import { useState } from "react";
+import Layout from "./components/layout/Layout";
+import RedeemModal from "./components/redeem-modal/RedeemModal";
 
 function App() {
-	return (
-		<>
-			<Routes>
-				<Route path="/" element={<Layout />} />
-				<Route path="/overview" element={<OverView />} />
-			</Routes>
-		</>
-	);
+  const [redeemModal, setredeemModal] = useState({
+    isActive: true,
+  });
+  return (
+    <>
+      {redeemModal.isActive && <RedeemModal />}
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/overview" element={<OverView />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
