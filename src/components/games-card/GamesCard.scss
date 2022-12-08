@@ -1,0 +1,44 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as breakpoint;
+@use "../../styles/partials/mixins" as *;
+
+.games__card {
+	width: 66.2963rem;
+	height: 100%;
+	display: flex;
+	gap: 2%;
+}
+
+.game {
+	&__card {
+		width: 20.9256rem;
+		height: 14.3331rem;
+	}
+
+	&__image {
+		height: 9.5369rem;
+		width: 100%;
+	}
+
+	&__title {
+		@include desktopPageHeader;
+		font-size: 1.4812rem;
+	}
+
+	&__desc {
+		@include desktopBodyLarge;
+		font-size: 0.7406rem;
+	}
+}
+
+/*  MOBILE   */
+@include breakpoint.small {
+}
+
+/*  TABLET  */
+@include breakpoint.medium {
+}
+
+/*  DESKTOP  */
+@include breakpoint.large {
+}

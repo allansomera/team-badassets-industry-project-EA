@@ -1,0 +1,129 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as breakpoint;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
+
+.main {
+	background-color: #1d2033;
+	width: 66.2963rem;
+	// height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+
+	&__top-section {
+		height: 28.3794rem;
+		background: url("../../assets/images/Group\ 37343.png") center/cover;
+		padding: 1rem;
+	}
+
+	&__bottom-section {
+		height: 14.6294rem;
+		padding: 1rem;
+	}
+}
+
+.buttons {
+	display: flex;
+	height: 2.5rem;
+	width: 147px;
+	gap: 5%;
+}
+
+.btn {
+	background-color: #323445;
+	height: 2.9169rem;
+	border-radius: 0.5rem;
+	border: none;
+	color: #ffffff;
+	font-size: 1.1113rem;
+
+	&-icon {
+		height: 1.2962rem;
+		width: 1.0625rem;
+	}
+
+	&-left {
+		width: 5.8794rem;
+	}
+	&-right {
+		width: 44.44px;
+	}
+
+	&-join {
+		margin-top: 7.6375rem;
+		border: 2px solid #2764ea;
+		height: 2.0531rem;
+		width: 8.0975rem;
+		border-radius: 0.5rem;
+		background-color: rgba(0, 0, 0, 0);
+		color: #ffffff;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+	}
+}
+
+.searchbar {
+	position: relative;
+	height: 2.9162rem;
+	width: 16.3888rem;
+
+	&__input {
+		height: 100%;
+		width: 100%;
+		padding-left: 2.5rem;
+        border-radius: 0.5rem;
+        border: none;
+	}
+
+	&__icon {
+		position: absolute;
+		top: 0.5rem;
+		left: 0.625rem;
+	}
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-start;
+	gap: 2%;
+	width: 419px;
+}
+
+.hero {
+	&__desc {
+		margin-top: 7.4375rem;
+		color: #ffffff;
+
+		&-title {
+			font-size: 2.5rem;
+			line-height: 1.125rem;
+			margin-bottom: 1rem;
+		}
+
+		&-text--large {
+			font-size: 1.25rem;
+			line-height: 1.5rem;
+			margin-bottom: 0.5rem;
+		}
+
+		&-text--small {
+			font-size: 0.9375rem;
+			line-height: 1.125rem;
+		}
+	}
+}
+
+/*  MOBILE   */
+@include breakpoint.small {
+}
+
+/*  TABLET  */
+@include breakpoint.medium {
+}
+
+/*  DESKTOP  */
+@include breakpoint.large {
+}
